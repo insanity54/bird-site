@@ -1,0 +1,14 @@
+<html>
+<head>
+<title>My bird site</title>
+</head>
+<body>
+<p>Welcome to my bird site</p>
+
+<ul>
+  {%- for bird in birds.list %}
+    <a href="/birds/{{ bird.name }}">{{ bird.name }}</a>
+  {% endfor -%}
+</ul>
+</body>
+</html>

@@ -1,0 +1,20 @@
+
+
+<html>
+<head>
+<title>{{ bird.name }} bird</title>
+</head>
+<body>
+  <div class="block">
+  {{ bird.name }}
+    {% island 'BirdViewer.svelte', 'client:load' %}
+    {% prop 'name', bird.name %}
+    {% prop 'beak', bird.beak %}
+    {% prop 'wing', bird.wing %}
+    {% prop 'feet', bird.feet %}
+    {% prop 'eyes', bird.eyes %}
+    {% prop 'tail', bird.tail %}
+    {% endisland %}
+  </div>
+</body>
+</html>

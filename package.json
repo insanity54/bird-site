@@ -1,0 +1,23 @@
+{
+  "name": "slinkity-repro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "npx http-server ./_site",
+    "start": "node index.js",
+    "dev": "DEBUG=\"*\" npx @11ty/eleventy --incremental --quiet --serve --config=./.eleventy.cjs",
+    "build": "pnpm run clean; npx @11ty/eleventy --config ./.eleventy.cjs",
+    "clean": "rm -rf ./_site && rm -rf ./.eleventy-temp-build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Unlicense",
+  "dependencies": {
+    "@11ty/eleventy": "2.0.0-canary.35",
+    "@slinkity/svelte": "^1.0.0",
+    "slinkity": "1.0.0-canary.0",
+    "svelte": "^3.57.0"
+  }
+}
